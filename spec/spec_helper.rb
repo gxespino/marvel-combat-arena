@@ -1,0 +1,1 @@
+require 'marvel-combat-arena'
