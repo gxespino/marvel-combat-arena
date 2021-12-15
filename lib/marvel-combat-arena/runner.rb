@@ -42,7 +42,6 @@ module MarvelCombatArena
 
         characters = handler.characters(response)
 
-
         char1 = prompt.select("Choose the first fighter:") do |menu|
           characters.each do |character|
             menu.choice character[:name], character[:id]
@@ -117,9 +116,6 @@ module MarvelCombatArena
         sleep([0.1, 0.2].sample)
         bar.advance(2)
       end
-    end
-
-    def test_connection
     end
   end
 end

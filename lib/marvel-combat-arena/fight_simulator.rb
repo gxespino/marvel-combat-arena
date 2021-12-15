@@ -1,5 +1,9 @@
 module MarvelCombatArena
   module FightSimulator
+    # Logic to decide which fighter will win based on the seed number.
+    #
+    # If both fighters have empty descriptions, the fight is declared
+    # a tie and an Array containing both fighter's data will be returned.
     def self.fight(fighters:, location_seed:)
       fighters.inject({}) do |memo, fighter|
         word = fighter[:description].split(" ")[location_seed - 1].to_s
