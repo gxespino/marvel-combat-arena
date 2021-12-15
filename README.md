@@ -2,9 +2,10 @@
 
 A CLI for a text based Marvel character combat arena
 
-To use:
+To use, first fork this repo. Then:
 
 ```
-$ gem install marvel-combat-arena
-$ marvel-combat-arena fight
+$ cd marvel-combat-arena/
+$ bundle install
+$ bundle exec marvel-combat-arena fight
 ```
