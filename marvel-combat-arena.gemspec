@@ -12,7 +12,11 @@ spec = Gem::Specification.new do |s|
   s.require_paths << 'lib'
   s.bindir = 'bin'
   s.executables << 'marvel-combat-arena'
+  s.add_development_dependency('pry')
   s.add_development_dependency('rake','~> 0.9.2')
   s.add_development_dependency('rspec')
+  s.add_development_dependency('pastel')
+  s.add_development_dependency('tty-prompt')
+  s.add_development_dependency('tty-progressbar')
   s.add_runtime_dependency('gli','~> 2.20.1')
 end
